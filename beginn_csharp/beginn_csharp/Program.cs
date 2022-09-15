@@ -13,22 +13,25 @@ namespace beginn_csharp
             Console.WriteLine("Wie alt bist du? ");
             int age = Convert.ToInt32(Console.ReadLine());
 
-            if (age < 18)
+            if (age > 18)
             {
-                Console.WriteLine("Du darfst nicht rein");
+                if (age < 29)
+                {
+                    Console.WriteLine("Zeige mir deinen Ausweis");
+                }
+                else
+                {
+                    Console.WriteLine("Du darfst rein");
+                }
+
             }
             else
             {
-                Console.WriteLine("Viel Spaß");
+                Console.WriteLine("Du darfst nicht rein");
+                
 
             }
-
-
-
-
-            //            double multiplikator = 3;
-            //            Console.WriteLine("du bist " + height + " groß ");
-
+            
             Console.ReadLine();
 
             
