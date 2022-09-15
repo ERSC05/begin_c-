@@ -10,28 +10,12 @@ namespace beginn_csharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Wie alt bist du? ");
-            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("gib mir ien Wort! ");
+            string entry = Console.ReadLine();
+            string replaced_entry = entry.Replace("U", "G").Replace("u", "g");
+            Console.WriteLine("Der alte Text war " + entry);
+            Console.WriteLine("Der neue Text ist " + replaced_entry);
 
-            if (age > 18)
-            {
-                if (age < 29)
-                {
-                    Console.WriteLine("Zeige mir deinen Ausweis");
-                }
-                else
-                {
-                    Console.WriteLine("Du darfst rein");
-                }
-
-            }
-            else
-            {
-                Console.WriteLine("Du darfst nicht rein");
-                
-
-            }
-            
             Console.ReadLine();
 
             
