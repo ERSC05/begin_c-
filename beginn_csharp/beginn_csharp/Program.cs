@@ -10,17 +10,24 @@ namespace beginn_csharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Wie heißt du?");
-            string username = Console.ReadLine();
-//            string name = "Erwin";
-            Console.WriteLine("hello Wold! " + username);
-            Console.WriteLine("Wie alt bist du aktuel?? ");
+            Console.WriteLine("Wie alt bist du? ");
             int age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Wie alt bist du in X Jahren");
-            int nextYear = Convert.ToInt32(Console.ReadLine());
-            int sumYears = age + nextYear;
-            Console.WriteLine("du bist also in " + nextYear + " Jahren, " + sumYears);
-//            Console.WriteLine("Dein Alter ist " + age);
+
+            if (age < 18)
+            {
+                Console.WriteLine("Du darfst nicht rein");
+            }
+            else
+            {
+                Console.WriteLine("Viel Spaß");
+
+            }
+
+
+
+
+            //            double multiplikator = 3;
+            //            Console.WriteLine("du bist " + height + " groß ");
 
             Console.ReadLine();
 
