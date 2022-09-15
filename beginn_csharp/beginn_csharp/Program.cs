@@ -12,6 +12,7 @@ namespace beginn_csharp
         {
             Console.WriteLine("hello Wold!");
             Console.ReadLine();
+
         }
     }
 }
