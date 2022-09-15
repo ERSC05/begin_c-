@@ -10,12 +10,13 @@ namespace beginn_csharp
     {
         static void Main(string[] args)
         {
-            int i = 0;
-            do
+            string entry = "Das ist ein Text mit Wörtern";
+
+            string[] entries = entry.Split(' ');
+            foreach(string wort in entries)
             {
-                Console.WriteLine(i);
-                i++;
-            } while (i < 10);
+                Console.WriteLine(wort);
+            }
 
 
             Console.ReadLine();
