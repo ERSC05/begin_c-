@@ -10,11 +10,13 @@ namespace beginn_csharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("gib mir ein Wort! ");
-            for(int i = 0; i < 10; i+=2)
+            int i = 0;
+            while (i<10)
             {
                 Console.WriteLine(i);
+                i++;
             }
+
 
             Console.ReadLine();
 
